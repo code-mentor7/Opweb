@@ -1,0 +1,199 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeng/resources/themes/omega/theme.css";
+@import "~font-awesome/css/font-awesome.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~flag-icon-css/css/flag-icon.min.css";
+
+body
+{
+    padding-top: 50px;
+}
+
+td,th{
+  text-align: center
+}
+
+td a i {
+  cursor: pointer;
+}
+.ui-dialog
+{
+    width: 100% !important;
+    max-width: 500px !important;
+}
+.ui-dialog-titlebar{
+    background: white;
+    border-bottom:1px solid !important;
+    border-color: #d6cfcf !important;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 3px solid #42A948; /* green */
+}
+.ng-invalid:not(form)  {
+  border-left: 3px solid #a94442; /* red */
+}
+/*step wizard style*/
+.ui-steps ul{
+  padding-top: 20px;
+  display: flex;
+}
+.ui-steps .ui-steps-item {
+        width: 25%;
+    }
+
+.ui-steps.steps-custom {
+    margin-bottom: 30px;
+}
+
+.ui-steps.steps-custom .ui-steps-item .ui-menuitem-link {
+
+    height: 5px;
+    padding: 0 1em;
+}
+
+.ui-steps.steps-custom .ui-steps-item .ui-steps-number {
+    background-color: #0081c2;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 36px;
+    border-radius: 50%;
+    margin-top: -14px;
+    margin-bottom: 10px;
+}
+
+.ui-steps.steps-custom .ui-steps-item .ui-steps-title {
+    color: rgba(1, 6, 1, 0.9);
+}
+
+.ui-chips-input-token input{
+    width: 15em;
+}
+
+
+.inline-paginator
+{
+    display: inline-block;
+}
+
+.google-place-search
+{
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 30px;
+    outline: none;
+    box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* google maps search suggestions box */
+.pac-container
+{
+    z-index: 5000;
+}
+
+.btn-right {
+  float: right;
+  margin-left: 10px;
+}
+
+#searchInput {
+    margin: 10px;
+    width: 90%;
+}
+.input-xs {
+    height: 22px;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 1.5; /* If Placeholder of the input is moved up, rem/modify this. */
+    border-radius: 3px;
+}
+.select-services .ui-overlaypanel{
+    /*height: 600px;*/
+    /*top: 55px !important;*/
+    /*left: 175px !important;*/
+    /*overflow: auto;*/
+}
+
+.ui-chkbox-label{
+
+  font-weight: 300;
+}
+
+h1
+{
+    font-size: 32px;
+}
+
+.checkbox label{
+  padding-left: 0px;
+}
+
+/* progress bar style */
+.ui-widget-content {
+  border: none;
+}
+.bar-success .ui-progressbar-value {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+.bar-primary .ui-progressbar-value {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.bar-warning .ui-progressbar-value {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+.bar-danger .ui-progressbar-value {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+.cursor-help {
+  cursor: help;
+}
+
+.progress-vertical .progress-bar {
+  border-right: 1px solid #fff;
+}
+.progress-vertical .progress-bar:last-child {
+  border-right: none;
+}
+.progress-vertical {
+  position: relative;
+}
+.progress-vertical .progress-value {
+  position: absolute;
+  left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .progress-vertical {
+    width: 200px;
+  }
+}
+
+.mg-top-10px {
+  margin-top: 10px;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 7px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  25px; }
