@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Set Static Path
-app.use('/', express.static(__dirname));
+app.use('/', express.static(__dirname + '/public'));
 
 // Import API Routes
 app.use(require('./api/user'));
