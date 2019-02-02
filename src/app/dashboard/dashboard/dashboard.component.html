@@ -1,0 +1,9 @@
+<nav-bar></nav-bar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-offset-3 col-sm-6" style="text-align: center">
+      <h1 *ngIf="me.user && me.user.status !== 'INACTIVE'">{{ 'Welcome!' }}</h1>
+      <h1 *ngIf="me.user && me.user.status === 'INACTIVE'">{{ 'Your account has not yet be approved by the administrator' }}</h1>
+    </div>
+  </div>
+</div>
