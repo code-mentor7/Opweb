@@ -1,0 +1,30 @@
+<div class="login-form-container">
+  <div class="login-form">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+      <div class="form-group" [ngClass]="{'has-error':requiredFields.email}">
+        <input name="email" type="email" class="form-control" placeholder="{{ 'Email' }}" required [(ngModel)]="user.email">
+      </div>
+      <div class="form-group" [ngClass]="{'has-error':requiredFields.password}">
+        <input name="password" type="password" class="form-control" placeholder="{{ 'Password' }}" required [(ngModel)]="user.password">
+      </div>
+      <div class="form-group">
+        <input name="password_again" type="password" class="form-control" placeholder="{{ 'Password again' }}" required [(ngModel)]="password_again">
+      </div>
+      <div class="form-group">
+        <input name="given_name" class="form-control" placeholder="{{ 'Given name' }}" required [(ngModel)]="user.given_name">
+      </div>
+      <div class="form-group">
+        <input name="surname" class="form-control" placeholder="{{ 'Surname' }}" required [(ngModel)]="user.surname">
+      </div>
+      <div class="form-group">
+        <h1>{{ code }}</h1>
+      </div>
+      <div class="form-group">
+        <input name="captcha" class="form-control" placeholder="{{ 'CAPTCHA' }}" required [(ngModel)]="confirmCode">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-default" style="float: right">{{ 'Sign Up' }}</button>
+      </div>
+    </form>
+  </div>
+</div>
