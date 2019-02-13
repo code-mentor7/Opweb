@@ -1,0 +1,51 @@
+.menu-nav {
+    z-index: 100;
+    background-color: #258FCE;
+}
+
+
+.menu-nav.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.menu-nav .last-nav {
+    padding-right: 10px;
+}
+
+.menu-nav.navbar-default .navbar-nav > .open > a,
+.menu-nav.navbar-default .navbar-nav > .open > a:focus,
+.menu-nav.navbar-default .navbar-nav > .open > a:hover {
+    background-color: #377AA1;
+}
+.select-nav:hover{
+  cursor: pointer;
+}
+
+.logo-panel .logo {
+    height: 20px;
+    margin: 12px 10px;
+}
+
+/* Helps position submenu */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+}
+/* Menus under the submenu should show up on the right of the parent */
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+

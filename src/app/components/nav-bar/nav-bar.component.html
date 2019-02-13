@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default navbar-fixed-top" style="z-index: 100">
+  <!-- Logo and toggle -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" style="height: 34px; padding-top: 7px;" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="sr-only">{{ 'Toggle navigation' }}</span>
+      <i class="fa fa-bars fa-lg" style="color: #333;"></i>
+    </button>
+  </div>
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul *ngIf="me.user && me.user.status !== 'INACTIVE'" class="nav navbar-nav">
+      <li><a routerLink="/admin/dashboard" class="nav-link">{{ 'Dashboard'}}</a></li>
+      <li *ngIf="me.user.client_id === 'ADMIN'"><a routerLink="/admin/admin" class="nav-link">{{ 'Admin'}}</a></li>
+      <li><a routerLink="/admin/reports" class="nav-link">{{ 'Reports'}}</a></li>
+      <li><a routerLink="/admin/orders" class="nav-link">{{ 'Orders'}}</a></li>
+      <li><a routerLink="/admin/loans" class="nav-link">{{ 'Stock Loan'}}</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right last-nav">
+      <li class="hidden-xs" style="height: 24px;"></li>
+      <li><a href (click)="logout($event)"><i class="fa fa-sign-out"></i> {{ 'Logout' }}</a></li>
+      <li class="hidden-xs" style="height: 24px; margin-right: 10px;"></li>
+    </ul>
+  </div><!-- collapse -->
+
+</nav>

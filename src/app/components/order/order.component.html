@@ -1,0 +1,31 @@
+<nav-bar></nav-bar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="content-panel">
+        <div class="table-responsive" >
+          <table class="table table-condensed table-hover" style="width: auto;">
+            <thead style="background:#f9f9f9">
+            <tr>
+              <th>{{ 'Price' }}</th>
+              <th>{{ 'Size' }}</th>
+              <th>{{ 'Filled' }}</th>
+              <th>{{ 'Status' }}</th>
+              <th>{{ 'Feedcode' }}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let order of orders">
+              <td> {{ order.price }} </td>
+              <td> {{ order.size }} </td>
+              <td> {{ order.filled }} </td>
+              <td> {{ order.status }} </td>
+              <td> {{ order.feedcode }} </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

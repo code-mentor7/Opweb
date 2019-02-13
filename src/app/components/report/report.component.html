@@ -1,0 +1,29 @@
+<nav-bar></nav-bar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="content-panel">
+        <div class="table-responsive" >
+          <table class="table table-condensed table-hover" style="width: auto;">
+            <thead style="background:#f9f9f9">
+            <tr>
+              <th>{{ 'Name' }}</th>
+              <th>{{ 'Client ID' }}</th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let report of reports">
+              <td> {{ report.report_name }} </td>
+              <td> {{ report.client_id }} </td>
+              <td>
+                <button type="button" class="btn btn-default btn-xs" (click)="onDownload(report)">Download</button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
